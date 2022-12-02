@@ -45,9 +45,9 @@ def titanic_predict():
     y_pred_inf = np.where(y_pred_inf >= 0.5, 1, 0)
 
     if y_pred_inf == 0:
-        label = 'Customer most likely will not churn'
+        label = 'Customer most likely will not leave the service'
     else:
-        label = 'Customer most likely will churn'
+        label = 'Customer most likely will leave the service'
 
     print('[DEBUG] Result : ', y_pred_inf, label)
     print('')
