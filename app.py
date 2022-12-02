@@ -45,9 +45,9 @@ def titanic_predict():
     y_pred_inf = np.where(y_pred_inf >= 0.5, 1, 0)
 
     if y_pred_inf == 0:
-        label = 'Reservation Will Not likely be Cancelled'
+        label = 'Customer most likely will not churn'
     else:
-        label = 'Reservation Will Likely be Cancelled'
+        label = 'Customer most likely will churn'
 
     print('[DEBUG] Result : ', y_pred_inf, label)
     print('')
